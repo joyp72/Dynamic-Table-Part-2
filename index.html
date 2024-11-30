@@ -1,0 +1,52 @@
+<!-- Joy Patel, COMP 4610 201 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Table</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form action="" id="form">
+        <div>
+            <label for="minCol">Minimum Column Value:</label>
+            <input type="number" id="minCol" name="minCol">
+        </div>
+        <div id="minColSlider" class="slider"></div>
+        <div>
+            <label for="maxCol">Maximum Column Value:</label>
+            <input type="number" id="maxCol" name="maxCol">
+        </div>
+        <div id="maxColSlider" class="slider"></div>
+        <div>
+            <label for="minRow">Minimum Row Value:</label>
+            <input type="number" id="minRow" name="minRow">
+        </div>
+        <div id="minRowSlider" class="slider"></div>
+        <div>
+            <label for="maxRow">Maximum Row Value:</label>
+            <input type="number" id="maxRow" name="maxRow">
+        </div>
+        <div id="maxRowSlider" class="slider"></div>
+        <input type="submit" value="Generate Table"></input>
+    </form>
+
+    <!-- container for table to be generated -->
+    <div id="table"></div>
+    
+    <!-- external JavaScript -->
+    <script src="index.js"></script>
+
+    <!-- JQuery -->
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="validation.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <script src="slider.js"></script>
+</body>
+</html>

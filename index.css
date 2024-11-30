@@ -1,0 +1,82 @@
+/* Joy Patel, COMP 4610 201 */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    border: solid;
+    padding: 20px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border-radius: 10px;
+}
+
+.slider {
+    width: 145px;
+}
+
+.error {
+    display: block;
+    color: red;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 3px;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+#table {
+    margin-top: 20px;
+    width: 280px;
+    height: 280px;
+    overflow: auto;
+}
+
+#table table {
+    border-collapse: collapse;
+    text-align: right;
+}
+  
+#table th, #table td {
+    border: 2px solid black;
+    padding: 5px;
+}
+  
+#table th, #table td:nth-of-type(1) {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    border-color: white;
+    font-weight: bold;
+}
+
+#table th {
+    z-index: 2;
+    border-bottom-color: black;
+    border-top: none;
+    border-bottom: none;
+}
+
+#table th:last-child {
+    border-right-color: black;
+}
+
+#table td:nth-of-type(1) {
+    z-index: 1;
+    border-right-color: black;
+}
+  
+#table td {
+    background-color: white;
+    color: black;
+}
